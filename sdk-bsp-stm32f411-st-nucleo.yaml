@@ -4,7 +4,7 @@ board:
   debug_interface: SWD
   debugger: ST-LINK
   description_en: The STM32 Nucleo-64 boards provide an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller. For the compatible boards, the external SMPS significantly reduces power consumption in Run mode.
-  description_zh: 探索者 STM32F411-Nucleo-64 是意法半导体推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 100Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32F411RE 的芯片性能。
+  description_zh: "探索者 STM32F411-Nucleo-64 是意法半导体推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 100Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32F411RE 的芯片性能。"
   emulator_machine: ''
   large_image: documents/images/board_large.png
   name: STM32F411-ST-NUCLEO
@@ -34,7 +34,6 @@ default_projects:
     - .cproject
     - .gitignore
     - .project
-    - .sconsign.dblite
     - .settings
     - applications
     - board
@@ -77,7 +76,7 @@ default_projects:
     package_type: RT-Thread_Source_Code
     package_vendor: ''
     package_version: latest
-    source_path_offset: ''
+    source_path_offset: 'rt-thread'
     target_path_offset: rt-thread
   project_description: ''
   project_name: ''
@@ -91,10 +90,10 @@ docs:
   title: STM32F411RE Datasheet
 example_projects: []
 features:
-- LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3) 。
-- 按键，2 个，USER and RESET 。
-- 常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口。
-- 调试接口，板载 ST-LINK/V2-1 调试器。
+- "LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3) 。"
+- "按键，2 个，USER and RESET 。"
+- "常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口。"
+- "调试接口，板载 ST-LINK/V2-1 调试器。"
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThead
 pkg_version: 0.1.0
