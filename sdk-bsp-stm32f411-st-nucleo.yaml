@@ -90,11 +90,16 @@ docs:
   title: STM32F411RE Datasheet
 example_projects: []
 features:
-- "LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3) 。"
+- "LED：3, USB communication (LD1), user LED (LD2), power LED (LD3)"
+- "Buttons: USER and RESET"
+- "Interface: USB supports 3 different interfaces: virtual COM port, mass storage and debugging port"
+- "Debug: ST-LINK/V2-1"
+features_zh:
+- "LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3)"
 - "按键，2 个，USER and RESET 。"
-- "常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口。"
-- "调试接口，板载 ST-LINK/V2-1 调试器。"
+- "常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口"
+- "调试接口，板载 ST-LINK/V2-1 调试器"
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
 pkg_version: 0.1.0
-yaml_version: 1
+yaml_version: 2
