@@ -1,4 +1,4 @@
-*.pyc
+!*.pyc
 *.map
 *.dblite
 *.elf
@@ -9,7 +9,7 @@
 *.pdb
 *.idb
 *.ilk
-*.old
+!*.old
 build
 Debug
 documentation/html
@@ -39,4 +39,4 @@ DebugConfig/
 RTE/
 settings/
 *.uvguix*
-cconfig.h
+!cconfig.h
