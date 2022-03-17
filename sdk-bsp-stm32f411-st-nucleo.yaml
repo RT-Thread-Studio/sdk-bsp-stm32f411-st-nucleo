@@ -3,8 +3,13 @@ board:
   buy_url_global: https://estore.st.com/en/nucleo-f411re-cpn.html
   debug_interface: SWD
   debugger: ST-LINK
-  description_en: The STM32 Nucleo-64 boards provide an affordable and flexible way for users to try out new concepts and build prototypes by choosing from the various combinations of performance and power consumption features, provided by the STM32 microcontroller. For the compatible boards, the external SMPS significantly reduces power consumption in Run mode.
-  description_zh: "探索者 STM32F411-Nucleo-64 是意法半导体推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为 100Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32F411RE 的芯片性能。"
+  description_en: The STM32 Nucleo-64 boards provide an affordable and flexible way
+    for users to try out new concepts and build prototypes by choosing from the various
+    combinations of performance and power consumption features, provided by the STM32
+    microcontroller. For the compatible boards, the external SMPS significantly reduces
+    power consumption in Run mode.
+  description_zh: 探索者 STM32F411-Nucleo-64 是意法半导体推出的一款基于 ARM Cortex-M4 内核的开发板，最高主频为
+    100Mhz，该开发板具有丰富的板载资源，可以充分发挥 STM32F411RE 的芯片性能。
   emulator_machine: ''
   large_image: documents/images/board_large.png
   name: STM32F411-ST-NUCLEO
@@ -67,7 +72,60 @@ default_projects:
     - include
     - libcpu/arm
     - libcpu/Kconfig
-    - libcpu/Sconscript
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 4.0.5
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@4.0.5
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: rtt_default_project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
     - src
     - tools
     - Kconfig
@@ -76,7 +134,7 @@ default_projects:
     package_type: RT-Thread_Source_Code
     package_vendor: ''
     package_version: latest
-    source_path_offset: 'rt-thread'
+    source_path_offset: rt-thread
     target_path_offset: rt-thread
   project_description: ''
   project_name: ''
@@ -90,16 +148,17 @@ docs:
   title: STM32F411RE Datasheet
 example_projects: []
 features:
-- "LED: 3, USB communication (LD1), user LED (LD2), power LED (LD3)"
-- "Buttons: USER and RESET"
-- "Interface: USB supports 3 different interfaces: virtual COM port, mass storage and debugging port"
-- "Debug: ST-LINK/V2-1"
+- 'LED: 3, USB communication (LD1), user LED (LD2), power LED (LD3)'
+- 'Buttons: USER and RESET'
+- 'Interface: USB supports 3 different interfaces: virtual COM port, mass storage
+  and debugging port'
+- 'Debug: ST-LINK/V2-1'
 features_zh:
-- "LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3)"
-- "按键：2 个，USER and RESET 。"
-- "常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口"
-- "调试接口：板载 ST-LINK/V2-1 调试器"
+- LED：3 个，USB communication (LD1), user LED (LD2), power LED (LD3)
+- 按键：2 个，USER and RESET 。
+- 常用接口：USB 支持 3 种不同接口：虚拟 COM 端口、大容量存储和调试端口
+- 调试接口：板载 ST-LINK/V2-1 调试器
 pkg_type: Board_Support_Packages
 pkg_vendor: RealThread
-pkg_version: 0.1.1
+pkg_version: 0.1.2
 yaml_version: 2
